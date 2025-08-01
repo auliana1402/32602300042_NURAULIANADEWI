@@ -1,0 +1,167 @@
+/* ===== Import Google Fonts ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== CSS Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #e3f2fd;
+    color: #212121;
+    line-height: 1.6;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    background-color: #1e3a8a;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    flex-wrap: wrap;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #a5d8ff;
+}
+
+/* ===== Header / Banner ===== */
+.header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f3f4f6;
+}
+
+.header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.header p {
+    font-size: 16px;
+    color: #475569;
+    margin-top: 8px;
+}
+
+/* ===== Content Container ===== */
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px 60px;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: #a5f3fc;
+}
+
+/* ===== About Section ===== */
+.about {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.about p {
+    font-size: 14px;
+    color: #1e293b;
+    text-align: justify;
+}
+
+/* ===== Experience Section ===== */
+.experience {
+    flex: 1.2;
+    min-width: 300px;
+}
+
+.experience h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.experience table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background-color: #f8fafc;
+}
+
+.experience th,
+.experience td {
+    border: 1px solid #cbd5e1;
+    padding: 10px;
+    text-align: left;
+}
+
+.experience th {
+    background-color: #1e40af;
+    color: white;
+}
+
+/* ===== Responsive Design ===== */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header h1 {
+        font-size: 22px;
+    }
+
+    .header p {
+        font-size: 13px;
+    }
+
+    .experience th, .experience td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}

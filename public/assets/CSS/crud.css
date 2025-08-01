@@ -1,0 +1,163 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Warna dasar dan gradasi */
+body {
+    background: linear-gradient(to right, #f6f9fc, #e0f7fa);
+    color: #333;
+    padding: 20px;
+}
+
+/* Container utama */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffffcc;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Judul */
+.tittle h1,
+.title h1 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+/* Form style */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Merapatkan jarak antar elemen */
+}
+
+.input label {
+    margin-bottom: 4px; /* Mengurangi jarak antara label dan input */
+    font-weight: 600;
+    color: #34495e;
+}
+
+.input input[type="text"],
+.input input[type="file"] {
+    width: 100%; /* Memastikan input memenuhi lebar container */
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+.input input:focus {
+    border-color: #3f51b5;
+    outline: none;
+    box-shadow: 0 0 4px #3f51b55c;
+}
+
+/* Tombol */
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+  button[type="submit"] {
+      padding: 8px 16px; /* Ukuran kecil */
+      background-color: oklab(54.543% 0.04147 -0.20158 / 0.458);
+      color: white; /* Warna teks */
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px; /* Jarak antara kolom input dan tombol */
+  }
+
+.button button:hover,
+.button input[type="submit"]:hover {
+    background: linear-gradient(to right, #1e88e5, #1565c0);
+}
+
+/* Table */
+.table {
+    margin-top: 30px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+th {
+    background: #3f51b5;
+    color: white;
+}
+
+td {
+    background: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background: #eef2f7;
+}
+
+/* Aksi tombol */
+.action button {
+    padding: 8px 14px;
+    margin: 2px;
+    border-radius: 6px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-update {
+    background-color: #4caf50;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #e53935;
+    color: white;
+}
+
+.btn-update:hover {
+    background-color: #43a047;
+}
+
+.btn-delete:hover {
+    background-color: #c62828;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .input {
+        flex-direction: column;
+    }
+
+    th, td {
+        font-size: 14px;
+    }
+
+    .button {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
